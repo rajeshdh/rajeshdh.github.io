@@ -14,7 +14,7 @@ description              : "Just another web developer"
 url                      : "http://rajeshdh.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
-teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   : "paragliding.JPG"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -65,30 +65,30 @@ author:
   avatar           : "bio-photo.jpg"
   bio              : "Just another web developer"
   location         : "Bir, Himachal Pradesh"
-  email            :
+  email            : "rajeshdhimanskt@gmail.com"
   uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : "dgreatzero"
   foursquare       :
   github           : "rajeshdh"
   google_plus      :
   keybase          :
   instagram        : "dhiman.rajesh"
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/rajeshsunnyd"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : "http://stackoverflow.com/users/2165143/rajesh-dhiman"
   steam            :
   tumblr           :
   twitter          : "paharihacker"
   vine             :
   weibo            :
   xing             :
-  youtube          :
+  youtube          : "rajeshsunnyd"
 
 
 # Reading Files
