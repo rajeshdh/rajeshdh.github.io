@@ -11,16 +11,16 @@ title                    : "Rajesh Dhiman"
 title_separator          : "-"
 name                     : "Rajesh Dhiman"
 description              : "Just another web developer"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "http://rajeshdh.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "facebook", "google-plus", custom"
+  provider               : "disqus"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "rajeshdhiman"
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
@@ -35,9 +35,9 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "paharihacker"
 facebook:
-  username               :
+  username               : "dgreatzero"
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -73,10 +73,10 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "rajeshdh"
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : "dhiman.rajesh"
   lastfm           :
   linkedin         :
   pinterest        :
@@ -84,7 +84,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : "paharihacker"
   vine             :
   weibo            :
   xing             :
