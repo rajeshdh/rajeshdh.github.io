@@ -20,6 +20,7 @@ Bots for Messenger are for anyone who's trying to reach people on mobile - no ma
 In this tutorial we will create a facebook messenger bot in node.js, that uses [eliza bot's](http://www.masswerk.at/elizabot/) functionality for conversations
 and deploy it on [heroku.](https://www.heroku.com/)
 
+## Setup Node Server
 Lets start with creating a node server application, that we can host at heroku to make to accessible to facebook-messenger api.
 
 + Make sure you have [Node](https://nodejs.org/en/) installed. 
@@ -90,4 +91,32 @@ app.get('/webhook', function (req, res) {
 First GET handler  is only there to make sure the server is up and running when you visit app’s web address.
 
 The second GET handler `/webhook` is used by Facebook to verify our server app as designated to handle Messenger Bot integration.
-`testbot_verify_token` will be used as a verify token for the app which we’ll in a while.
+`testbot_verify_token` will be used as a verify token for the app which we’ll use in a while.
+
+Now we will deploy our application on heroku, so we can get it verified from Facebook api.
+
+*Note: Advanced users can also use [ngork](https://ngrok.com/) with a self-signed SSL certificate to host your application*
+
+## Setup Git
+
+1. Create a [`.gitignore`](https://git-scm.com/docs/gitignore)  file that ignores [`node_modules/`.](https://github.com/github/gitignore/blob/master/Node.gitignore)
+2. Initialize a git repository and commit your project changes. 
+
+```bash
+$ git init
+$ git add .
+$ git commit -m 'intial commit'
+```
+
+## Setup Heroku
+1. Make sure you have a [heroku](https://www.heroku.com) account and [heroku toolbelt](https://toolbelt.heroku.com/) installed. 
+2. Create your heroku app, give it a name (replace *myApp*) and push it to heroku server.
+
+```bash
+
+$ heroku apps:create myApp 
+$ git push heroku master
+
+```
+If everything works fine, you can checkout your app running by using `heroku open` command.
+
