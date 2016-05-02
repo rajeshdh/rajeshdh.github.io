@@ -1,5 +1,5 @@
 ---
-title:  "Creating a chatbot using Facebook messenger, node.js and elizabot"
+title:  "Creating a chatbot using Facebook messenger"
  header:
   teaser: "facebook.png"
 categories: 
