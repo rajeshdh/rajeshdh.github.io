@@ -11,6 +11,7 @@ tags:
   - node.js
   - heroku
   - eliza-bot
+hashtags: bots, facebook_messenger_bot, nodejs
 ---
     
 Few days ago facebook launched [messenger platform](https://developers.facebook.com/docs/messenger-platform) with support to develop [Bots for messenger.](https://developers.facebook.com/blog/post/2016/04/12/bots-for-messenger/) 
