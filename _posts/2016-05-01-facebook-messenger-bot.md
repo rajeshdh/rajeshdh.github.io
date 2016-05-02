@@ -79,7 +79,7 @@ app.get('/', function (req, res) {
 
 // Facebook Webhook
 app.get('/webhook', function (req, res) {
-    if (req.query['hub.verify_token'] === 'testbot_verify_token') {
+    if (req.query['hub.verify_token'] === 'mybot_verify_token') {
         res.send(req.query['hub.challenge']);
     } else {
         res.send('Invalid verify token');
@@ -91,7 +91,7 @@ app.get('/webhook', function (req, res) {
 First GET handler  is only there to make sure the server is up and running when you visit app’s web address.
 
 The second GET handler `/webhook` is used by Facebook to verify our server app as designated to handle Messenger Bot integration.
-`testbot_verify_token` will be used as a verify token for the app which we’ll use in a while.
+`mybot_verify_token` will be used as a verify token for the app which we’ll use in a while.
 
 Now we will deploy our application on heroku, so we can get it verified from Facebook api.
 
@@ -119,4 +119,23 @@ $ git push heroku master
 
 ```
 If everything works fine, you can checkout your app running by using `heroku open` command.
+
+## Setup Facebook App
+
+For this integration, you will need the following:
+
+**Facebook App:** The Facebook App contains the settings. 
+This is where you will setup your webhook, retrieve your page access token and submit your app for approval.
+
+**Facebook Page:** A Facebook Page will be used as the identity of your bot.
+ When people chat with your bot, they will see the Page name and the Page profile pic.
+
+**Webhook URL:** Facebook use secure callbacks in order to send you messaging events. 
+These will be sent to your webhook.
+
+We have already setup the **Webhook URL** its `https://yourapp.herokuapp.com/webhook` *(yourapp is your heroku app)*
+
+To create a **Facebook page** and setup a **Facebook App** please refer to instructions from [facebook here.](https://developers.facebook.com/docs/messenger-platform/implementation#create_app_page)
+`<YOUR_VERIFY_TOKEN>` is  `mybot_verify_token` or whatever you have added in index.js.
+Come back when its done. 
 
