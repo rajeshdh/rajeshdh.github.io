@@ -1,6 +1,6 @@
 ---
-title:  "Facebook messenger bot" more than just echo
-header:
+title:  "Creating a chatbot using Facebook messenger, node.js and elizabot"
+ header:
   teaser: "facebook.png"
 categories: 
   - bots
