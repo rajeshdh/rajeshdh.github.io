@@ -259,4 +259,5 @@ $ git push heroku master
 
 ```
 You can also download complete project from [Github](https://github.com/rajeshdh/facebook-messenger-bot) 
-or checkout the live demo by sending a message at my [facebook page.](https://www.facebook.com/teamSanyatra/) Replies will be sent by elizabot.
+~~or checkout the live demo by sending a message at my [facebook page.](https://www.facebook.com/teamSanyatra/) Replies will be sent by elizabot.~~ 
+You need to get your bot approved from facebook, only then it can work for all otherwise it will work for the tester accounts for that page only. 
